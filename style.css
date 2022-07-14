@@ -1,0 +1,137 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:burlywood;
+    
+}
+.todolist {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    color: rgb(160,82,45);
+    padding: 5px 10px;
+    font-size: 30px;
+}
+.check{
+    margin-left: 20px;
+    font-size: 17px;
+}
+.inputClass {
+    margin: 50px;
+    padding: 10px;
+}
+
+.input {
+    height: 35px;
+    width: 30vw;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(246, 242, 242);
+    font-size: 17px;
+}
+
+.addTodo {
+    width: 80px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(160,82, 92);
+    color: rgb(243, 231, 231);
+    cursor: pointer;
+}
+
+.addTodo:hover{
+    opacity: 0.8;
+}
+
+.task {
+    margin: 10px;
+    display: inline-block;
+}
+
+.newtask {
+    margin-bottom: 80px;
+}
+
+p {
+    background-color: rgb(211, 163, 168);
+    height: 30px;
+    width: 50vw;
+    padding: 5px 20px 0px 20px;
+    font-size: 17px;
+    border-radius: 25px;
+    text-align: left;
+    border-bottom: 1px solid rgb(247, 246, 246);
+}
+
+.action {
+    display: flex;
+}
+
+.DoneTask,
+.deleteTask,
+.editta {
+    margin-right: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(162, 82, 45);
+    color: rgb(243, 231, 231);
+    font-size: 15px;
+    cursor: pointer;
+    float: left;
+}
+
+.deleteTask {
+    background-color: rgba(255, 227, 184, 0.961);
+    color: rgb(0, 0, 0);
+}
+.editta{
+    background-color: rgba(124, 99, 61, 0.961);
+    color: rgb(245, 245, 245);
+
+}
+
+.DoneTask:hover, .deleteTask:hover{
+    opacity: 0.8;
+}
+#tick-mark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+#tick-mark::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 3px;
+    background-color: #336699;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #336699;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+
+
